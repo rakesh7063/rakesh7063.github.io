@@ -513,6 +513,7 @@ background-size: 10px 10px;
   /* background: rgb(112, 89, 94); */
   color: #000;
   color: rgba(255, 255, 255, 0.735);
+  
   /* change */
 }
 
@@ -528,13 +529,21 @@ background-size: 10px 10px;
 }
 .project .carousel .card:hover .box {
   transform: scale(1.05);
+
 }
 .project .carousel .card .text {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 10px 0 7px 0;
+ color: white;
 }
-
+.project .carousel .card .techStack{
+  margin-top: 20px;
+  font-size: 18px;
+}
+/* .project .carousel .card:hover .box p{
+  text-align: justify;
+} */
 .repo-links {
   display: flex;
   justify-content: space-between;
