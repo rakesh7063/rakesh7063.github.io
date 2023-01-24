@@ -515,6 +515,10 @@ background-size: 10px 10px;
   color: rgba(255, 255, 255, 0.735);
   /* change */
 }
+
+.project .carousel .card .box{
+  height: 580px;
+}
 .project .carousel .card .box {
   display: flex;
   flex-direction: column;
@@ -569,8 +573,8 @@ background-size: 10px 10px;
 }
 
 .project .carousel .card img {
-  height: 250px;
-  width: 250px;
+  /* height: 250px; */
+  width: 100%;
   object-fit: cover;
   border-radius: 5%;
   /* border: 5px solid rgb(20,180,220); */
