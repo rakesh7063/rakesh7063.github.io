@@ -788,6 +788,14 @@ background-size: 10px 10px;
 #cont .title::after {
   content: "my contribution";
 }
+
+#github-elements img{
+display: block;
+margin: auto;
+
+margin-top: 20px;
+
+}
 /* contact section styling */
 
 .material-symbols-outlined{
@@ -1077,6 +1085,7 @@ footer span a:hover {
   font-size: 15px;
   border-radius: 10px;
   transition: background 0.5s,transform 0.5s;
+  /* background 0.5s,transform 0.5s; */
 }
 .skills-list div i{
   font-size: 50px;
@@ -1134,7 +1143,7 @@ footer span a:hover {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  
+
   -moz-box-shadow:inset 0px 0px 5px #666;
   -webkit-box-shadow:inset 0px 0px 5px #666;
   box-shadow:inset 0px 0px 1px #666;
