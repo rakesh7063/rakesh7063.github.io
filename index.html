@@ -22,17 +22,17 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar">
+    <nav class="navbar" id="nav-menu">
         <div class="max-width">
             <div class="logo"><a href="#">Rakesh<span> Kandar</span></a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#home" class="nav-link-home menu-btn">Home</a></li>
+                <li><a href="#about" class="nav-link-about menu-btn">About</a></li>
                 <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#project" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a onclick="window.open('https://drive.google.com/file/d/1EpUVUTkFazPaVJFjFbefBQxGQdSMbygq/view?usp=share_link','_blank')"
+                <li><a href="#skills" class="nav-link skills menu-btn">Skills</a></li>
+                <li><a href="#projects" class="nav-link contact menu-btn">Projects</a></li>
+                <li><a href="#contact" class="nav-link contact Resume menu-btn">Contact</a></li>
+                <li><a id="resume-button-1" onclick="window.open('https://drive.google.com/file/d/1EpUVUTkFazPaVJFjFbefBQxGQdSMbygq/view?usp=share_link','_blank')"
                      href="images/Rakesh-Kandar-Resume.pdf"
                      download="Rakesh_Kandar_Resume"
                      title="download">Resume</a></li>
@@ -51,7 +51,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Rakesh Kandar</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a onclick="window.open('https://drive.google.com/file/d/1EpUVUTkFazPaVJFjFbefBQxGQdSMbygq/view?usp=share_link','_blank')"
+                <a id="resume-button-2" onclick="window.open('https://drive.google.com/file/d/1EpUVUTkFazPaVJFjFbefBQxGQdSMbygq/view?usp=share_link','_blank')"
                 href="images/Rakesh-Kandar-Resume.pdf"
                 download="Rakesh_Kandar_Resume"
                 title="download">Resume</a>
@@ -60,16 +60,16 @@
     </section>
 
     <!-- about section start -->
-    <section class="about" id="about">
+    <section class="about section" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                   <img src="./images/favicon_io/selfpic.png" alt="">
+                   <img class="home-img" src="./images/favicon_io/selfpic.png" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Rakesh Kandar and I'm a <span class="typing-2"></span></div>
-                    <p>A passionate JAVA Back-End Developer, Dedicated to developing robust applications that interact with the Backend part of web applications. Extensive expertise in website architecture, design, and web design, and web API designs. Problem-solving mindset with a goal to optimize my application for better stability and speed. Love to work in a team.</p>
+                    <div id="user-detail-name" class="text">I'm Rakesh Kandar and I'm a <span class="typing-2"></span></div>
+                    <p id="user-detail-intro">A passionate JAVA Back-End Developer, Dedicated to developing robust applications that interact with the Backend part of web applications. Extensive expertise in website architecture, design, and web design, and web API designs. Problem-solving mindset with a goal to optimize my application for better stability and speed. Love to work in a team.</p>
                     <!-- <a href="#">Download CV</a> -->
                 </div>
             </div>
@@ -115,21 +115,21 @@
                 <div class="column left">
 
                     <div class="skills-images" id="java_img">
-                        <img src="./images/java.svg" alt="javaSvg">
+                        <img class="skills-card-img" src="./images/java.svg" alt="javaSvg">
                     </div>
 
                     <div class="skills-images" id="hibernate_img">
-                        <img src="./images/hibernatesvg.svg" alt="">
+                        <img class="skills-card-img" src="./images/hibernatesvg.svg" alt="">
                     </div>
 
                     
                     <div class="skills-images">
-                        <img src="./images/mysql.svg" alt="">
+                        <img class="skills-card-img" src="./images/mysql.svg" alt="">
                     </div>
 
                     
                     <div class="skills-images" id="github_img">
-                        <img src="./images/mavenimg.png" alt="">
+                        <img class="skills-card-img"src="./images/mavenimg.png" alt="">
                     </div>
 
                 </div>
@@ -196,38 +196,38 @@
 
 
     <!-- project section start -->
-    <section class="project" id="project">
+    <section class="project" id="projects">
         <div class="max-width">
             <h2 class="title">Projects</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
-                    <div class="box">
+                    <div class="project-card box">
                         <img src="./images/ketto.png" alt="">
-                        <div class="text">Ketto website Clone</div>
-                        <p style="text-align: justify;">Ketto is India's best medical crowdfunding platform. Users can search crowdfunders, fill forms for funding and make a payment. It's a collaborative project done in 5 days. </p>
-                        <p class="techStack"> <b>Tech Used: Html, CSS, JavaScript</b></p>
+                        <div class="project-title text">Ketto website Clone</div>
+                        <p class="project-description" style="text-align: justify;">Ketto is India's best medical crowdfunding platform. Users can search crowdfunders, fill forms for funding and make a payment. It's a collaborative project done in 5 days. </p>
+                        <p class="project-tech-stack techStack"> <b>Tech Used: Html, CSS, JavaScript</b></p>
                         <div class="repo-links">
                             <div class="repo-div">
-                                <span>  <a href="https://github.com/rakesh7063/versed-substance-8213" target="_blank"> Git Repo </a></span>
+                                <span>  <a  class="project-github-link" href="https://github.com/rakesh7063/versed-substance-8213" target="_blank"> Git Repo </a></span>
                             </div>
                             <div class="demo-div">
-                                <span> <a href="https://ketto-official-clone.netlify.app/" target="_blank">  Live Site  </a></span>
+                                <span> <a  class="project-deployed-link" href="https://ketto-official-clone.netlify.app/" target="_blank">  Live Site  </a></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="box">
+                    <div class="project-card box">
                         <img src="./images/YouTube.png" alt="">
-                        <div class="text">YouTube Mini App</div>
-                        <p style="text-align: justify;">It's a Mini Application of YouTube in which users can search max 50 results per day.Users can see videos and comments.An Individual project Done in 1 days.</p>
-                        <p class="techStack"><b>Tech Used: Html, CSS, JavaScript</b></p>
+                        <div class="project-title text">YouTube Mini App</div>
+                        <p class="project-description" style="text-align: justify;">It's a Mini Application of YouTube in which users can search max 50 results per day.Users can see videos and comments.An Individual project Done in 1 days.</p>
+                        <p class="project-tech-stack techStack"><b>Tech Used: Html, CSS, JavaScript</b></p>
                         <div class="repo-links">
                             <div class="repo-div">
-                                <span>  <a href="https://github.com/rakesh7063/Youtube_clone" target="_blank"> Git Repo </a></span>
+                                <span>  <a  class="project-github-link" href="https://github.com/rakesh7063/Youtube_clone" target="_blank"> Git Repo </a></span>
                             </div>
                             <div class="demo-div">
-                                <span> <a href="https://officalial-youtube-clone.netlify.app/" target="_blank">  Live Site  </a></span>
+                                <span> <a  class="project-deployed-link" href="https://officalial-youtube-clone.netlify.app/" target="_blank">  Live Site  </a></span>
                             </div>
                         </div>
                     </div>
@@ -254,34 +254,34 @@
 
             <!-- next project adding -->
             <div class="card">
-                <div class="box">
+                <div class="project-card box">
                     <img src="https://user-images.githubusercontent.com/105923141/201533787-4d06207a-331d-44fe-86d7-82386c456b27.png" alt="Under construcion">
-                    <div class="text">MGNREGA</div>
-                    <p style="text-align: justify;">The MGNREGA was initiated with the objective of enhancing livelihood security in rural areas by providing at least 100 days of guaranteed wage employment in a financial year, to every household whose adult members volunteer to do unskilled manual work.</p>
-                    <p class="techStack"><b>Tech Used: Java, MySQL</b></p>
+                    <div class="project-title text">MGNREGA</div>
+                    <p class="project-description" style="text-align: justify;">The MGNREGA was initiated with the objective of enhancing livelihood security in rural areas by providing at least 100 days of guaranteed wage employment in a financial year, to every household whose adult members volunteer to do unskilled manual work.</p>
+                    <p class="project-tech-stack techStack"><b>Tech Used: Java, MySQL</b></p>
                     <div class="repo-links">
                         <div class="repo-div">
-                            <span>  <a href="https://github.com/rakesh7063/damp-system-3320" target="_blank"> Git Repo </a></span>
+                            <span>  <a class="project-github-link" href="https://github.com/rakesh7063/damp-system-3320" target="_blank"> Git Repo </a></span>
                         </div>
                         <div class="demo-div">
-                            <span> <a href="https://drive.google.com/file/d/1LFNSV3vOmylJk4hUNhy5BgoyKzCfZqGb/view" target="_blank">  Live Site  </a></span>
+                            <span> <a  class="project-deployed-link" href="https://drive.google.com/file/d/1LFNSV3vOmylJk4hUNhy5BgoyKzCfZqGb/view" target="_blank">  Live Site  </a></span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <div class="box">
+                <div class="project-card box">
                     <img src="https://raw.githubusercontent.com/Anantk05/Online-Shopping-Application/main/images/Customer%20Controller.png" alt="Under construcion">
-                    <div class="text">Online Shopping Application API</div>
-                    <p style="text-align: justify;">An Online Shopping Application API where Users can register/login, add/explore products, add to cart/update and can place order.</p>
-                    <p class="techStack"><b>Tech Used: Java, SpringBoot, Springdata-JPA, Hibernate, MySQL, Swagger-ui</b></p>
+                    <div class="project-title text">Online Shopping Application API</div>
+                    <p class="project-description" style="text-align: justify;">An Online Shopping Application API where Users can register/login, add/explore products, add to cart/update and can place order.</p>
+                    <p class="project-tech-stack techStack"><b>Tech Used: Java, SpringBoot, Springdata-JPA, Hibernate, MySQL, Swagger-ui</b></p>
                     <div class="repo-links">
                         <div class="repo-div">
-                            <span>  <a href="https://github.com/rakesh7063/weak-tail-7310" target="_blank"> Git Repo </a></span>
+                            <span>  <a class="project-github-link" href="https://github.com/rakesh7063/weak-tail-7310" target="_blank"> Git Repo </a></span>
                         </div>
                         <div class="demo-div">
-                            <span> <a href="https://drive.google.com/file/d/1h3g7LgLsukLVnT6O0v4Hv9cdTj7pUESC/view" target="_blank">  Live Site  </a></span>
+                            <span> <a  class="project-deployed-link" href="https://drive.google.com/file/d/1h3g7LgLsukLVnT6O0v4Hv9cdTj7pUESC/view" target="_blank">  Live Site  </a></span>
                         </div>
                     </div>
                 </div>
@@ -452,21 +452,21 @@
                     <div class="text">Get in Touch</div>
                     <p>Got a project? Reach out and let's work together on something exciting. Big or small. Mobile or web.</p>
                     <div class="icons">
-                        <div class="row">
+                        <div id="contact-email" class="row">
                             <a href="mailto:rakeshkandar2021@gmail.com"> <i class="fas fa-envelope"></i> </a>
                             <div class="info">
                                 <div class="head"></div>
                                 <div class="sub-title">  <a href="mailto:rakeshkandar2021@gmail.com"> rakeshkandar2021@gmail.com</a> </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div id="contact-linkedin" class="row">
                              <a href="https://www.linkedin.com/in/rakesh-kandar-180a58244/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
                             <div class="info">
                                 <!-- <div class="head">Address</div> -->
                                 <div class="sub-title">  <a href="https://www.linkedin.com/in/rakesh-kandar-180a58244/" target="_blank">Linkedin</a> </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div id="contact-github" class="row">
                              <a href="https://github.com/rakesh7063 target="_blank"> <i class="fab fa-github"></i> </a>
                             <div class="info">
                                 <!-- <div class="head">Email</div> -->
@@ -480,7 +480,7 @@
                                 </span> </a>
                            <div class="info">
                                <!-- <div class="head">Email</div> -->
-                               <div class="sub-title"> +91 7063077834 </div>
+                               <div id="contact-phone" class="sub-title"> +91 7063077834 </div>
                            </div>
                        </div>
                         
